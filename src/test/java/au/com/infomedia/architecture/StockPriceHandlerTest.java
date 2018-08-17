@@ -12,6 +12,6 @@ public class StockPriceHandlerTest {
 
         ApiGatewayResponse<String> response = stockPriceHandler.handleRequest(Collections.singletonMap("queryParameters", new Object()), null);
 
-        assertEquals("hey there", response.getBody());
+        assertEquals("{\"architecturePrice\": 1.22}", response.getBody());
     }
 }

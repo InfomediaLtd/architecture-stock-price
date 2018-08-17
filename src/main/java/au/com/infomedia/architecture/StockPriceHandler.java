@@ -8,6 +8,6 @@ import java.util.Map;
 public class StockPriceHandler implements RequestHandler<Map<String,Object>, ApiGatewayResponse<String>> {
     @Override
     public ApiGatewayResponse<String> handleRequest(Map<String, Object> input, Context context) {
-        return new ApiGatewayResponse<>("hey there");
+        return new ApiGatewayResponse<>("{\"architecturePrice\": 1.22}");
     }
 }
